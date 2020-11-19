@@ -18,8 +18,8 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table class="table table-dark table-striped text-dark" width="600" border="1">
-  <tr class="table-primary">
+<table class="table table-dark table-striped" width="600" border="1">
+  <tr class="table-primary text-dark">
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Test6 </div></th>
