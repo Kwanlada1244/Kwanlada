@@ -31,7 +31,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo $Result <a href='userupdateform.php?member_id=$row[0]'>edit</a> ;?></td>
+    <td><?php echo $Result['Link'];?></td>
   </tr>
 <?php
 }
