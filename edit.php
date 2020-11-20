@@ -15,7 +15,7 @@ $sql = "UPDATE guestbook SET comment='$comment' WHERE name='$name'";
 
 
 if (mysqli_query($conn, $sql)) {
-echo "Record deleted successfully";
+echo "Record edit successfully";
 } else {
 echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
