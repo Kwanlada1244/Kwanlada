@@ -31,8 +31,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><?php echo '<a href="delete.php?id='.$Result['id'].'">Delete</a>'?> 
-      <?php echo '<a href=“insert_new.php?id='.$Result['id'].’”>Update</a>’?></td>
+    <td><?php echo '<a href=“insert_new.php?id='.$Result['id'].’”>Update</a>’?></td>
   </tr>
 <?php
 }
