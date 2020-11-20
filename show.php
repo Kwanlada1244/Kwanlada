@@ -31,7 +31,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><a href="delete_form.html"><input type="submit" value="ลบ"  class="btn btn-danger">&nbsp;&nbsp;<a href="edit_form.html"><input type="submit" value="แก้ไข" class="btn btn-warning"></a></td>
+    <td><a href="delete_form.html"><input type="submit" value="ลบ"  class="btn btn-danger">&nbsp;&nbsp;<a href="edit_form.html"><input type="submit" value="แก้ไข" class="btn btn-danger"></a></td>
   </tr>
 <?php
 }
@@ -41,7 +41,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
   <form action="form.html">
-    <div align="center"><input type="submit" id="commentBtn" value="เพิ่ม" class="table-warning"> </div>
+    <div align="center"><input type="submit" id="commentBtn" value="เพิ่ม" class="btn btn-warning"> </div>
   </form>
 </body>
 </html>
