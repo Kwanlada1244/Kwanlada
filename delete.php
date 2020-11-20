@@ -17,8 +17,5 @@ if (mysqli_query($conn, $sql)) {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
 
-<div class="container">
-  <center><a href="show.php"><input type="button" value="Back"></a></center>
-</div>
 mysqli_close($conn);
 ?>
