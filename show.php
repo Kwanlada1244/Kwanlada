@@ -22,7 +22,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
   <tr class="table-info text-dark">
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
-    <th width="150"> <div align="center">tesT3 </div></th>
+    <th width="150"> <div align="center">Action </div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -31,7 +31,7 @@ while($Result = mysqli_fetch_array($res))
   <tr>
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
-    <td><a href="delete_form.html"><input type="submit" value="ลบ"  class="btn btn-danger">&nbsp;&nbsp;<a href="edit_form.html"><input type="submit" value="แก้ไข" class="btn btn-danger"></a></td>
+    <td><a href="delete_form.html"><input type="submit" value="Delete"  class="btn btn-danger">&nbsp;&nbsp;<a href="edit_form.html"><input type="submit" value="Edit" class="btn btn-danger"></a></td>
   </tr>
 <?php
 }
@@ -41,7 +41,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
   <form action="form.html">
-    <div align="center"><input type="submit" id="commentBtn" value="เพิ่ม" class="btn btn-warning"> </div>
+    <div align="center"><input type="submit" id="commentBtn" value="Insert" class="btn btn-warning"> </div>
   </form>
 </body>
 </html>
