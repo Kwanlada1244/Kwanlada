@@ -14,7 +14,7 @@ $height = $_POST['height'];
 $bmi = $weight / ($height / 100) ** 2;
 $cal = round($bmi, 2);
 
-$sql = "UPDATE test SET weight='$weight' height='$height' bmi='$cal' WHERE name='$name'";
+$sql = "UPDATE test SET weight='$weight' , height='$height' , bmi='$cal' WHERE name='$name'";
 
 
 if (mysqli_query($conn, $sql)) {
