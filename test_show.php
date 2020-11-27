@@ -25,6 +25,7 @@ $res = mysqli_query($conn, 'SELECT * FROM test');
     <th width="120"> <div align="center">น้ำหนัก </div></th>
     <th width="120"> <div align="center">ส่วนสูง </div></th>
     <th width="120"> <div align="center">bmi </div></th>
+    <th width="120"> <div align="center">การจัดการ </div></th>
   </tr>
 <?php
 while($Result = mysqli_fetch_array($res))
@@ -35,6 +36,7 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['weight'];?></td>
     <td><?php echo $Result['height'];?></td>
     <td><?php echo $Result['bmi'];?></td>
+    <td><a href="test_edit_form.html"><input type="submit" value="Update" class="btn btn-danger"></a></td>
   </tr>
 <?php
 }
@@ -44,7 +46,7 @@ while($Result = mysqli_fetch_array($res))
 mysqli_close($conn);
 ?>
   <form action="test_form.html">
-    <div align="center"><input type="submit" id="commentBtn" value="เพิ่ม" class="btn btn-warning"> </div>
+    <div align="center"><input type="submit" id="commentBtn" value="Add" class="btn btn-warning"> </div>
   </form>
 </body>
 </html>
